@@ -6,18 +6,17 @@ public class App {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Please enter your first name.");
-        String firstName = input.nextLine();
-        System.out.println("Please enter your last name.");
-        String lastName = input.nextLine();
-
-        System.out.println("Please enter your age.");
+        System.out.println("What is your name?");
+        String name = input.nextLine();
+        System.out.println("How old are you?");
         String age = input.nextLine();
-        System.out.println("Please enter your current grade in school.");
-        String grade = input.nextLine();
-        System.out.println("Please enter your favorite color.");
-        String favoriteColor = input.nextLine();
+        System.out.println("Where do you live?");
+        String home = input.nextLine();
+        System.out.println("How many tasks do you do each day?");
+        String taskNumber = input.nextLine();
+        System.out.println("What is your favorite season?");
+        String favoriteSeason = input.nextLine();
         
-        System.out.println("Hello, " + firstName + " " + lastName + ". You are " + age + " years old, currently in " + grade + " grade, and your favorite color is " + favoriteColor + " of them.");
+        System.out.println("Hello, " + name + ". You are " + age + " years old, you currently live in " + home + ", and you perform " + taskNumber + " tasks each day. Your favorite season is " + favoriteSeason + ".");
     }
 }
