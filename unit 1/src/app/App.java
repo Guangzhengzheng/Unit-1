@@ -3,20 +3,28 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        int count = 0;
+        String color = "blue";
+        boolean bikes = false;
 
-        Scanner input = new Scanner(System.in);
+        while (count <= 50) {
+            System.out.println("The count is " + count);
+            count = count + 1;
+        }
 
-        System.out.println("What is your name?");
-        String name = input.nextLine();
-        System.out.println("How old are you?");
-        String age = input.nextLine();
-        System.out.println("Where do you live?");
-        String home = input.nextLine();
-        System.out.println("How many tasks do you do each day?");
-        String taskNumber = input.nextLine();
-        System.out.println("What is your favorite season?");
-        String favoriteSeason = input.nextLine();
-        
-        System.out.println("Hello, " + name + ". You are " + age + " years old, you currently live in " + home + ", and you perform " + taskNumber + " tasks each day. Your favorite season is " + favoriteSeason + ".");
+        while (color == "blue") {
+            System.out.println("The color is " + color);
+            color = "black";
+        }
+
+        while (bikes == false) {
+            System.out.println("Riding a bicycle is not an exercise (" + bikes + ")");
+            bikes = true;
+        }
+
+
+        System.out.println("count finished");
+        System.out.println("color finished");
+        System.out.println("bikes finished");
     }
 }
